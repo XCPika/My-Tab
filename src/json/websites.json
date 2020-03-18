@@ -1,0 +1,28 @@
+{
+    "Coding": [
+        "www.w3schools.com",
+        "www.github.com",
+        "zeit.co",
+        "www.draw.io",
+        "appstoreconnect.apple.com"
+    ],
+    "Emails": [
+        "outlook.office.com",
+        "outlook.live.com",
+        "www.gmail.com"
+    ],
+    "College": [
+        "my.bpc.ac.uk",
+        "proportal.bpc.ac.uk",
+        "portal.bpc.ac.uk"
+    ],
+    "Media": [
+        "www.netflix.com",
+        "www.youtube.com"
+    ],
+    "Defaults": [
+        "www.facebook.com",
+        "www.youtube.com",
+        "www.twitter.com"
+    ]
+}

@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled, { ThemeProvider } from 'styled-components'
+import m_theme from './json/main_theme'
+import Header from './components/Header'
+import LinkContainer from './components/CustomLinks/LinkContainer'
+import SearchArea from './components/SearchBar/SearchContainer'
+
+const Container = styled.div`
+background: ${props => props.theme.primary};
+width:100%;
+height:100vh;
+overflow:hidden;
+`
+
+const MainContainer = styled.div`
+background: ${props => props.theme.primary};
+height:90%;
+display:flex;
+overflow:auto;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <ThemeProvider theme={m_theme}>
+        <Container>
+          <Header/>
+          <MainContainer>
+            <LinkContainer/>
+            <SearchArea/>
+          </MainContainer>
+        </Container>
+      </ThemeProvider>
   );
-}
+};
 
 export default App;
