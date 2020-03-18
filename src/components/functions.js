@@ -13,9 +13,7 @@ const getCatagory = (value) => {
 };
 
 const goTo = (site) => {
-    chrome.tabs.getCurrent((tab) => {
-        chrome.tabs.update(tab.id, {url: "//"+site})
-    })
+    window.location.href = "//www.google.com/search?q="+site
 }
 
 export { getTitle, getCatagory, goTo } 
