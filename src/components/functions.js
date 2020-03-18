@@ -13,7 +13,7 @@ const getCatagory = (value) => {
 };
 
 const goTo = (site) => {
-    window.location.href = "//www.google.com/search?q="+site
+    window.location.href = site
 }
 
 export { getTitle, getCatagory, goTo } 
